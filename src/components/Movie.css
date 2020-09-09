@@ -1,5 +1,4 @@
 .movies .movie {
-    width: 45%;
     background-color: white;
     margin-bottom: 70px;
     display: flex;
@@ -13,6 +12,14 @@
                 0 8px 16px -8px rgba(0, 0, 0, 0.3),
                 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
+
+.movies .movie a {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    grid-gap: 20px;
+    text-decoration: none;
+    color: inherit;
+  }
 
 .movie img {
     position: relative;
@@ -42,6 +49,7 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     margin: 5px 0px;
 }
 
