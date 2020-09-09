@@ -1,44 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const foodILike = [
-  {
-    id: 1,
-    name: "Kimchi",
-    image: "https://kstory365.files.wordpress.com/2015/01/kimchi-01-cabbage.jpg",
-    rating: 4.5
-  },
-  {
-    id:2,
-    name: "Samgyetang",
-    image: "https://img.seoul.co.kr//img/upload/2019/07/25/SSI_20190725184016.jpg",
-    rating: 5
+
+class App extends React.Component{
+  // react는 class component의 render method를 자동으로 실행
+
+  // setState를 호출하면 render를 다시 실행
+  // react는 virtual DOM이기 때문에 변화가 있는 부분만 update
+
+  state = {
+    isLoading: true,
+    movies: []
+  };
+
+  componentDidMount() { // fetch data
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 5000);
   }
-];
 
-// function Food(props) {
-  function Food({ name, picture, rating }) {  // props.fav == { fav }
-  return <div>
-    <h2>I like {name}</h2>
-    <h4>{rating}/5.0</h4>
-    <img src={picture} alt={name} />
-  </div>; 
-}
+  render() {
+    const { isLoading } = this.state;
 
-Food.propTypes = {
-  name: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired
-};
-
-function App() {
-  return (
+    return (
     <div>
-      {foodILike.map(dish => (
-      <Food key={dish.id} name={dish.name} picture={dish.image} rating={dish.rating} />
-      ))}
+      {isLoading ? "Loading..." : "We are ready"}
     </div>
-  );
+    );
+  }
+
 }
 
 export default App;
