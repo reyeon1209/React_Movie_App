@@ -11,5 +11,5 @@
 * * *
 
 ### Component Life Cycle
-https://ko.reactjs.org/docs/react-component.html
-https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+https://ko.reactjs.org/docs/react-component.html  
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/  
