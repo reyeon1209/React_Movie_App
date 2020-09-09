@@ -10,6 +10,6 @@
 
 * * *
 
-### Component Life Cycle
+### Component LifeCycle
 https://ko.reactjs.org/docs/react-component.html  
-https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/  
+![image](https://user-images.githubusercontent.com/46713032/92557304-d88f8a00-f2a6-11ea-97d6-bfb56ce49f23.png)  
