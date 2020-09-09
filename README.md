@@ -27,3 +27,7 @@ Rect.Component를 상속
 - [componentWillUnmount()](https://ko.reactjs.org/docs/react-component.html#componentwillunmount) : component가 unmount되어 제거되기 직전에 호출  
 
 ![image](https://user-images.githubusercontent.com/46713032/92557304-d88f8a00-f2a6-11ea-97d6-bfb56ce49f23.png)  
+
+
+### App 화면
+![image](https://user-images.githubusercontent.com/46713032/92581368-924c2200-f2ca-11ea-83c6-6a6850c46791.png)  
